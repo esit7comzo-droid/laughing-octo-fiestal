@@ -1,4 +1,6 @@
-from flask import Flask, request, redirect, url_for, session, render_template_string, jsonify import sqlite3 import uuid
+from flask import Flask, request, redirect, url_for, session, render_template_string, jsonify
+import sqlite3
+import uuid
 
 app = Flask(name) app.secret_key = 'secretkey'
 
