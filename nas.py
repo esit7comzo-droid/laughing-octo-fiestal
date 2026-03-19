@@ -5,7 +5,7 @@ import uuid
 app = Flask(__name__)
 app.secret_key = 'secretkey'
 
-DB init
+#DB init
 
 def init_db(): conn = sqlite3.connect('nas.db') c = conn.cursor() c.execute('''CREATE TABLE IF NOT EXISTS files ( id TEXT, filename TEXT, content BLOB )''') conn.commit() conn.close()
 
