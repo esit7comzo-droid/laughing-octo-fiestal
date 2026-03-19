@@ -2,7 +2,8 @@ from flask import Flask, request, redirect, url_for, session, render_template_st
 import sqlite3
 import uuid
 
-app = Flask(name) app.secret_key = 'secretkey'
+app = Flask(__name__)
+app.secret_key = 'secretkey'
 
 DB init
 
